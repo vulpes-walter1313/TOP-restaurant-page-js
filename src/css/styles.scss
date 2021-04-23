@@ -1,0 +1,33 @@
+@use "sass/reset";
+@use "sass/fonts" as f;
+@use "sass/colors" as c;
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: f.$font-stack-one;
+}
+
+header {
+    background: url('../imgs/ella-olsson-4dQiaWKiL-Y-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.header-content {
+    width: min(100%, 70ch);
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(123, 172, 63, .7);
+    color: c.$white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
