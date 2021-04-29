@@ -1,0 +1,78 @@
+@use "sass/base";
+@use "sass/buttons";
+@use "sass/footer";
+
+header {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background-blend-mode: lighten;
+    background: url('../imgs/ella-olsson-4dQiaWKiL-Y-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.header-content {
+    width: min(100%, 70ch);
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(80, 116, 36, 0.8);
+    color: var(--white);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+        text-align: center;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.info-section {
+    background-color: olive;
+    width: min(90vw, 70ch);
+    margin: 1em auto 0;
+    padding: 2rem;
+
+    h2, p {
+        color: var(--white);
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+        margin: .5rem 0 1rem;
+    }
+    .contact-form {
+        display: flex;
+        flex-flow: column;
+        textarea {
+            height: 15ch;
+            font-size: 1.1rem;
+            margin: 1em 0 0;
+            padding: .5rem;
+        }
+        label {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin: 1em 0 0;
+        }
+        button {
+            margin: 1em 0 0
+        }
+    }
+}
+
+.menu-item-card {
+    margin: 0 0 2em;
+}
