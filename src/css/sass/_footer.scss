@@ -1,0 +1,36 @@
+#content {
+    footer {
+        background-color: antiquewhite;
+        width: min(90vw, 70ch);
+        margin: 1rem auto 0;
+        padding: 2rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        color: var(--black);
+        text-align: center;
+        ul {
+            margin: 1rem 0 0;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            // border: 1px solid red;
+            @media (min-width: 46rem) {
+                flex-flow: row nowrap;
+            }
+        }
+        li {
+            list-style: none;
+            margin: 1rem;
+            
+        }
+        a {
+            text-decoration: underline;
+            color: var(--black);
+        }
+        p, ul {
+            font-size: 1.2rem;
+        }
+    }
+}

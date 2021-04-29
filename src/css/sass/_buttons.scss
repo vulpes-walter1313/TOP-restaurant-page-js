@@ -1,0 +1,9 @@
+.info-selectors {
+    // border: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    button {
+        margin: .5rem;
+    }
+}
