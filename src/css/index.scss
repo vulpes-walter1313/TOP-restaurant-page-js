@@ -5,7 +5,7 @@
 header {
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
     background-blend-mode: lighten;
-    background: url('../imgs/ella-olsson-4dQiaWKiL-Y-unsplash.jpg');
+    background: url('../imgs/main-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,9 +33,9 @@ header {
 }
 
 .info-section {
-    background-color: olive;
+    background-color: var(--good-green);
     width: min(90vw, 70ch);
-    margin: 1em auto 0;
+    margin: 0 auto 0;
     padding: 2rem;
 
     h2, p {
@@ -43,6 +43,8 @@ header {
     }
     h2 {
         font-size: 3rem;
+        border-bottom: 2px solid var(--white);
+        margin: 0 0 1rem;
     }
     p {
         font-size: 1.2rem;
@@ -51,28 +53,56 @@ header {
     img {
         display: block;
         width: 100%;
-        margin: .5rem 0 1rem;
+        margin: 0 0 1rem;
     }
-    .contact-form {
-        display: flex;
-        flex-flow: column;
-        textarea {
-            height: 15ch;
-            font-size: 1.1rem;
-            margin: 1em 0 0;
-            padding: .5rem;
-        }
-        label {
-            color: var(--white);
-            font-size: 1.1rem;
-            margin: 1em 0 0;
-        }
-        button {
-            margin: 1em 0 0
-        }
-    }
+    
 }
 
+.contact-form {
+    display: flex;
+    flex-flow: column;
+    textarea {
+        height: 15ch;
+        font-size: 1.1rem;
+        margin: 1em 0 0;
+        padding: .5rem;
+    }
+    label {
+        color: var(--white);
+        font-size: 1.1rem;
+        margin: 1em 0 0;
+    }
+    input {
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    button {
+        margin: 1em 0 0;
+        padding: .5rem;
+        font-size: 1.1rem;
+        appearance: none;
+        border-style: none;
+        background-color: var(--good-green);
+        color: var(--white);
+        border: 2px solid var(--white);
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+    }
+}
+.menu-flex-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
 .menu-item-card {
-    margin: 0 0 2em;
+    flex: 1 1 200px;
+    margin: 0 1rem 2em;
+    // border: 2px solid red;
+    p {
+        padding: .5rem;
+    }
 }
