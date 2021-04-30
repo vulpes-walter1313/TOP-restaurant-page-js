@@ -3,7 +3,7 @@ function contactTab(section) {
     <label for="name-in">Enter your name</label>
     <input type="text" name="name" id="name-in">
     <label for="email-in">Enter your email</label>
-    <input type="text" name="email" id="email-in">
+    <input type="email" name="email" id="email-in">
     <textarea id="story" name="story">I would like to tell you...
     </textarea>
     <button>Submit</button>
