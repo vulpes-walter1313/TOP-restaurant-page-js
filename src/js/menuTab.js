@@ -14,6 +14,10 @@ function menuTab(section) {
     let h2 = document.createElement('h2');
     h2.textContent = "Menu"
     section.appendChild(h2);
+
+    let itemWrapperDiv = document.createElement('div');
+    itemWrapperDiv.classList.add("menu-flex-wrapper");
+
     menuItems.forEach(item => {
         let itemCard = document.createElement('div');
         itemCard.classList.add('menu-item-card');
@@ -28,9 +32,10 @@ function menuTab(section) {
         itemCard.appendChild(img);
         itemCard.appendChild(p);
     
-        section.appendChild(itemCard);
+        itemWrapperDiv.appendChild(itemCard);
 
     });
+    section.appendChild(itemWrapperDiv);
     return section;
 }
 
