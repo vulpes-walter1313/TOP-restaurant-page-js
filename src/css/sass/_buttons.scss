@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: stretch;
     width: min(90vw, 70ch);
-    background-color: var(--good-green);
+    background-color: var(--shallow-green);
     margin: 0 auto;
     button {
         // margin: 0 .5rem;
@@ -16,7 +16,7 @@
         // border-left: var(--tab-style);
         // border-right: var(--tab-style);
         border-bottom: var(--tab-style);
-        background-color: var(--good-green);
+        background-color: rgba(0,0,0,0);
         color: var(--white);
         font-size: 1.1rem;
         &:hover {

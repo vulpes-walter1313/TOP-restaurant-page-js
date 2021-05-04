@@ -15,8 +15,8 @@ header {
     justify-content: center;
 }
 .header-content {
-    width: min(100%, 70ch);
-    margin: 0 auto;
+    width: min(90%, 70ch);
+    margin: 1em auto;
     padding: 1.5rem;
     background-color: rgba(80, 116, 36, 0.8);
     color: var(--white);
@@ -33,7 +33,7 @@ header {
 }
 
 .info-section {
-    background-color: var(--good-green);
+    background-color: var(--shallow-green);
     width: min(90vw, 70ch);
     margin: 0 auto 0;
     padding: 2rem;
@@ -82,7 +82,7 @@ header {
         font-size: 1.1rem;
         appearance: none;
         border-style: none;
-        background-color: var(--good-green);
+        background-color: rgba(0,0,0,0);
         color: var(--white);
         border: 2px solid var(--white);
         &:hover {
@@ -104,5 +104,9 @@ header {
     // border: 2px solid red;
     p {
         padding: .5rem;
+    }
+    img {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
 }
